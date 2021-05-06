@@ -1,6 +1,6 @@
 FROM strapi/base
 
-# RUN mkdir -p /app
+RUN mkdir -p /app
 WORKDIR /app
 
 COPY ./package.json ./
