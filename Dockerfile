@@ -1,5 +1,6 @@
 FROM strapi/base
 
+# RUN mkdir -p /app
 WORKDIR /app
 
 COPY ./package.json ./
@@ -9,7 +10,7 @@ RUN yarn install
 
 COPY . .
 
-ENV NODE_ENV production
+ENV PORT 1337
 
 RUN yarn build
 
